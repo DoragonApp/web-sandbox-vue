@@ -1,7 +1,7 @@
 <template>
   <v-container>
-    <p v-if="$fetchState.pending">Fetching posts...</p>
-    <p v-else-if="$fetchState.error">Error while fetching posts</p>
+    <p v-if="$fetchState.pending">Fetching anime...</p>
+    <p v-else-if="$fetchState.error">Error while fetching anime</p>
     <v-row v-else>
       <v-col v-for="anime in animes" :key="anime.mal_id">
         <anime-card
